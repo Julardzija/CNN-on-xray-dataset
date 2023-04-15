@@ -1,4 +1,4 @@
-# Testing
+# Convolutional neural network
 Project which aims to develop a model to distinguish between xrays of people with pneumonia and people without pneumonia
 
 The project consists of the following part
