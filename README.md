@@ -1,4 +1,5 @@
-# Deep learning project [Open in Google Colab](https://colab.research.google.com/github/Julardzija/Deep-learning-on-pneumonia-xray-data/blob/main/CNN on Pneumonia Xray data.ipynb)
+# Deep learning project 
+[Open in Google Colab](https://colab.research.google.com/github/Julardzija/Deep-learning-on-pneumonia-xray-data/blob/main/CNN_on_Pneumonia_Xray_data.ipynb)
 This project which aims to develop a model to distinguish between xrays of people with pneumonia and people without pneumonia
 
 ## The project consists of the following parts:
