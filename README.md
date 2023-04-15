@@ -4,13 +4,13 @@ Project which aims to develop a model to distinguish between xrays of people wit
 The project consists of the following part
 
 1. Using following non-deep learning to perform image classification (tumor detection): 
-  -- support vector machines 
-  -- random forests  
-  -- boosting 
+    - support vector machines 
+    - random forests  
+    - boosting 
 
 
-2.	Using convolutional neural networks to perform image classification (tumor detection) and trying with alternative CNN models such as:
-a.	Consider and discuss alternative CNN-model architectures including spatial transformer networks.
+2.	Using convolutional neural networks to perform image classification (tumor detection) and trying with alternative CNN models that includes:
+a.	Spatial transformer networks.
 b.	Discuss different optimization methods and motivate your final choice. Use visualizations to show the relative performance of the optimizers.
 c.	Visualize how regularization (such as dropout, weight regularization, or early stopping) impacts the training of your model. Here, be sure to visualize plots of train and validation losses and accuracies both with and without the use of regularization. Discuss regularization and its relation to overfitting.
 d.	Visualize how data augmentation impacts the training of your model. Here, be sure to visualize plots of train and validation losses and accuracies both with and without the use of data augmentation. Discuss data augmentation and its relation to overfitting. 
