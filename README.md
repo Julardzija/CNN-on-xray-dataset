@@ -1,4 +1,4 @@
-# Deep learning project
+# Deep learning project 
 This project which aims to develop a model to distinguish between xrays of people with pneumonia and people without pneumonia
 
 ## The project consists of the following parts:
