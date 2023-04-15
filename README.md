@@ -4,9 +4,9 @@ Project which aims to develop a model to distinguish between xrays of people wit
 The project consists of the following part
 
 1. Using following non-deep learning to perform image classification (tumor detection): 
-  - support vector machines 
-  - random forests  
-  - boosting 
+  -- support vector machines 
+  -- random forests  
+  -- boosting 
 
 
 2.	Using convolutional neural networks to perform image classification (tumor detection) and trying with alternative CNN models such as:
