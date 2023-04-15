@@ -1,7 +1,23 @@
-# Convolutional neural network
-Project which aims to develop a model to distinguish between xrays of people with pneumonia and people without pneumonia
+# Deep learning project
+This project which aims to develop a model to distinguish between xrays of people with pneumonia and people without pneumonia
 
-The project consists of the following part
+##The project consists of the following parts:
+1. Preparing the dataset 
+2: Augment the data with a DataGenerators
+3. Creating the model (visuals included)
+4. Visualising the result
+
+##Augment the data with a DataGenerators
+Data augmentation, specifically image augmentation in our case, is a technique I can use to prevent overfitting. This is done by expanding the size of the training dataset by making transformed version of the images in the dataset. These transformations or modification I can somewhat control with the parameters in the function. I will be using the ImageDataGenerator from keras. This will only be applied to the training dataset as I am not interested in transforming the validation set and test set as the model needs to predict on unmodified data.
+
+
+The model run fasted with smaller batch sizes and will update the gradient more often while trying to estimate the function.
+
+I tested models with img size 250x250 and 500x500. The second gave us better performing models as normalized images were more detailed. However, smaller dimensions speeded up fitting the model 3
+
+
+
+
 
 1. Using following non-deep learning to perform image classification (tumor detection): 
     - support vector machines 
