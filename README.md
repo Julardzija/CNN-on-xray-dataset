@@ -9,15 +9,15 @@ The purpose of this project was to develop a model that is able to succesfully d
 3. Building the model (visuals included in notebook)
 4. Visualising the result
 
-## Preparing the dataset
+## Part 1: Preparing the dataset
 The dataset is available and shared through my Google Drive, which you are able to download in order to try and run the code. 
 
-## Augment the data with a DataGenerators
+## Part 2: Augment the data with a DataGenerators
 Data augmentation, specifically image augmentation in our case, is a technique to prevent overfitting. This is done by expanding the size of the training dataset by making transformed version of the images in the dataset. These transformations or modification I can somewhat control with the parameters in the function. I will be using the ImageDataGenerator from keras. This will only be applied to the training dataset as I am not interested in transforming the validation set and test set as the model needs to predict on unmodified data.
 
 **Note:** Data augmentation techniques used for any dataset must be chosen carefully and within the context of the dataset and knowledge of the problem domain. For this reason, I keep the augmentation fairly simple, as I am dealing with human physiology, and we are generally not symmetrical creatures, so mirroring images would not be beneficial as I want to keep left side of the body on the left. I do a few augmentations such as zoom, rotation, width and height shift but I keep the effects low to ensure that it does not look too far apart from realistic images
 
-## Building the model
+## Part 3: Building the model
 In order to best detect the patterns in the X-Ray images I chose to construct a Convolutional Neural Network.
 
 I added Pooling layers to each Convolutional layer to be able to down-sample the input representation (image),
@@ -31,7 +31,7 @@ moreover, to decrease its dimensionality by retaining the maximum value (activat
 - The sigmoid activation function for the last layer was a straight-forward choice, since it is a binary classification problem.
 - When compiling the model, it was again rather straight-forward to set the learning rate to "Adam", the loss function to "binary crossentropy", as well as the metrics to "accuracy". Adam is an adaptive learning rate method, meaning that it computes individual learning rates for different parameters. Since the nature of this problem is still binary classification, I used binary crossentropy for the evaluation of losses. Setting the metrics to "accuracy" measured the loss and accuracy of both the training and validation sets.
 
-## Visualising the results
+## Part 4: Visualising the results
 Here I am showing a confusion matrix, which is a contigency table, showing us True Positives, True Negatives, False Positives and False Negatives predictions. I also show a visualization of 9 predictions of the model and the confidence, expressed in % on how confident the model is in predicting classes Normal / Pneumonia. The example shows that the model gives us a good accuracy preformance on the test data and the misclassified image as Normal looks similar to the images of XRays from normal condions.  
 
 ## Conclusion
