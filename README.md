@@ -5,7 +5,7 @@ The purpose of this project was to develop a model that is able to succesfully d
 
 ## The project and notebook consists of the following parts:
 1. Preparing the dataset 
-2: Augment the data with a DataGenerators
+2. Augment the data with a DataGenerators
 3. Building the model (visuals included)
 4. Visualising the result
 
